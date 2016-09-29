@@ -1,0 +1,72 @@
+.seattle {
+    background-image: url(seattle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+nav ul {
+    background-color: rgba(0,0,0,0.5);
+}
+
+nav li {
+    width: 100%;
+}
+
+nav a{
+    color: white;
+}
+
+.hi {
+    font-family: "Helvetica Neue";
+    font-size: 250%;
+    padding-top: 15%;
+    padding-bottom: 0%;
+    text-align: center;
+}
+
+.isaac {
+    display: block;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.about-me {
+    background-color: white;
+}
+
+.about-me p {
+    line-height: 250%;
+}
+
+.about-me .col-md-4 {
+    padding-top: 6%;
+}
+
+.find-me {
+    background-color: steelblue;
+}
+
+.find-me h3 {
+    color: white;
+    font-family: "Helvetica Neue";
+    text-align: center;
+}
+
+.find-me ul {
+    margin-left: 25%;
+    margin-right: 20%;
+    margin-top: 5%;
+}
+
+.find-me li {
+    display: inline;
+    padding: 5%;
+}
+
+.find-me img {
+    height: 10%;
+    width: 10%;
+}
