@@ -1,0 +1,77 @@
+@media (min-width: 992px) {
+    .vertical-center {
+        position: relative;
+        transform: translateY(50%);
+    }
+}
+
+@media (max-width: 992px) {
+    .image-pad-horizontal {
+        margin-right: 5em;
+    }
+}
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.cut-bottom {
+    margin-bottom: 0;
+}
+
+.image-pad-vertical {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.list-square {
+    list-style: square;
+}
+
+.img-160 {
+    max-width: 160px;
+}
+
+.seattle {
+    background-image: url('../img/seattle.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.masthead {
+    background-color: rgba(42, 52, 64, 0.5);
+}
+
+.intro {
+    color: white;
+    font-size: 6em;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    text-align: center;
+}
+
+#about img {
+    max-width: 576px;
+    width: 33%;
+}
+
+#skills li {
+    margin: 1em;
+}
+
+#nu {
+    max-width: 1280px;
+    width: 33%;
+}
+
+#contact li {
+    padding-bottom: 1em;
+}
+
+#contact li ul li a {
+    color: white;
+}

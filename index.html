@@ -1,82 +1,519 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
-          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-            crossorigin="anonymous"></script>
-
-    <link href="main.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-    <script src="script.js"></script>
-    <meta charset="UTF-8">
     <title>Isaac Lee</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Slabo+27px" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cursor.css">
+    <link rel="stylesheet" href="css/lightbox.css">
 </head>
+
 <body>
-
-<div class="jumbotron seattle">
-    <div class="container overlay">
-    	<h1 class="name">Isaac Lee</h1>
-    	<div class="row">
-    		<div class="col-md-5">
-    			
-    		</div>
-    		<div class="col-md-2">
-		        <nav>
-		            <ul class="nav navbar-nav">
-		                <li><a href="#me">About Me</a></li>
-		                <li><a href="https://www.dropbox.com/s/j9eeow7xl0o5uy9/CURRENTResume.docx?dl=0">Resume</a></li>
-		                <li><a href="#contact">Contact Me</a></li>
-		            </ul>
-		        </nav>	
-    		</div>
-    		<div class="col-md-5">
-    			
-    		</div>
-    	</div>
-    </div>
-</div>
-
-<div class="jumbotron about-me" id="me">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="page-header">
-                    <h2>
-                        About Me
-                    </h2>
+    <div class="seattle">
+        <div class="masthead">
+            <div class="container">
+                <div class="row">
+                    <h1 class="intro"><span class="name"></span></h1>
                 </div>
-                <p>Computer Science Major @ Northwestern University, Class of 2019 <img src="nu.jpg" class="nu"></p>
-                <p>International School Graduate, Class of 2015 🎓</p>
-                <p>Aspiring Developer (Python, HTML, CSS, JavaScript, MATLAB, C#, C++, Java) 💻</p>
-                <p>Involved Student (IEEE NU Exec Board, Ayers CCI Exec Board, NU Club Baseball) 📚</p>
-                <p>Baseball Player + Diehard Mariners/Seahawks Fan ⚾🏈</p>
-            </div>
-            <div class="col-md-4">
-                <img src="isaac.jpg" class="image">
+                <div class="row">
+                    <ul class="list-unstyled list-inline text-center" id="bar">
+                        <li><a href="#about" class="btn--white">About Me</a></li>
+                        <li><a href="#portfolio" class="btn--white">Portfolio</a></li>
+                        <li><a href="#skills" class="btn--white">Skills</a></li>
+                        <li><a href="#student" class="btn--white">Education</a></li>
+                        <li><a href="#contact" class="btn--white">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="jumbotron find-me" id="contact">
-    <div class="container">
-        <h3>You can find me @</h3>
-        <ul>
-            <li><a href="mailto:isaaclee2019@u.northwestern.edu"><img src="sparrow.png"></a></li>
-            <li><a href="https://github.com/isaacrlee"><img src="github.jpg" </a></li>
-            <li><a href="https://www.linkedin.com/in/isaaclee34"><img src="linkedin.png" </a></li>
-        </ul>
-    </div>
-</div>
+    <section class="navy jumbotron" id="about">
+        <div class="container">
+            <div class="row">
+                <img src="img/isaac.jpg" class="img-rounded img-responsive center-block image-pad-vertical"></img>
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <p>I'm a student, engineer, and developer. I grew up in Bellevue, WA just outside of Seattle and passionately
+                        follow the tech industry. I'm currently studying Computer Science at Northwestern University with
+                        a particular interest in Artifical Intelligence and Interfaces.
+                        <br><br> Outside of programming and technology, I'm a huge sports fan, especially baseball. I proudly
+                        support the Seattle Mariners and Seattle Seahawks. I've also played baseball since I was 4 years
+                        old and continue to play at Northwestern for our club team.
+                        <br></br> If you would rather read about me in PDF format, my resume can be found here:</p>
+                    <a href="IsaacLeeResume.pdf" class="btn--white">Resume</a>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </section>
+    <section class="jumbotron" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center">Portfolio</h1>
+                <h1 class="text-center">
+                    <ul class="list-unstyled list-inline" id="projects-filter">
+                        <li class="current bg-teal"><a href="#" class="btn--heading">Programming</a></li>
+                        <li><a href="#" class="btn--heading">Design</a></li>
+                    </ul>
+                </h1>
+            </div>
+            <ul class="list-unstyled" id="projects">
+                <li class="programming">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-2">
+                            <a href="img/pocketian.jpg" data-lightbox="pocketian">
+                                <img src="img/pocketian.jpg" class="img-thumbnail img-160 vertical-center">
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Pocket Ian: Course Advising Chatbot <small>WildHacks (11/16)</small></h3>
+                            <ul class="list-square">
+                                <li>
+                                    <p>A Facebook Messenger Bot for Northwestern CS students that answers questions related
+                                        to EECS course requirements and offerings</p>
+                                </li>
+                                <li>
+                                    <p>Worked on scraping and cleaning course data from various Northwestern EECS resources
+                                        and building a question parser using Python</p>
+                                </li>
+                                <li>
+                                    <p>Built using Python, Flask, and Heroku</p>
+                                </li>
+                            </ul>
+                            <a href="https://devpost.com/software/pocket-ian" class="btn">Devpost (Video Demo)</a>
+                            <a href="https://github.com/JaredFern/PocketIan" class="btn">GitHub</a>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </li>
+                <li class="programming">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-2">
+                            <a href="img/cattracker.png" data-lightbox="cattracker">
+                                <img src="img/cattracker.png" class="img-thumbnail img-160 vertical-center">
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Cat Tracker: Alumni Locator <small>IEEE AE Program (1/16 - 4/16)</small></h3>
+                            <ul class="list-square">
+                                <li>
+                                    <p>A web app for Northwestern CS students to identify cities and companies where alumni
+                                        work
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Wrote a script that builds a customized Google Map with info windows detailing information
+                                        about alumni from LinkedIn
+                                        <p>
+                                </li>
+                                <li>
+                                    <p>Built using HTML, JavaScript, and the Google Maps API</p>
+                                </li>
+                            </ul>
+                            <a href="https://github.com/JaredFern/CatTracker" class="btn">GitHub</a>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </li>
+                <li class="programming">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-2">
+                            <a href="#">
+                                <a href="img/decoding.png" data-lightbox="decoding">
+                                    <img src="img/decoding.png" class="img-thumbnail img-160 vertical-center">
+                                </a>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Decoding the Teen Lifestyle: Fitness Tracking Project <small>IS Senior Project (1/15 - 6/15)</small></h3>
+                            <ul class="list-square">
+                                <li>
+                                    <p>Conducted a fitness tracking data collection project with 3 high school students to analyze
+                                        lifestyle and fitness patterns</p>
+                                </li>
+                                <li>
+                                    <p>Used a structured plan of online courses and tutorials to learn introductory web development</p>
+                                </li>
+                                <li>
+                                    <p>Created a responsive website summarizing the results of the data collection project and
+                                        promoting fitness tracking</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Built using HTML, CSS, and Bootstrap
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </li>
+                <li class="design hidden">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-2">
+                            <a href="img/scrubez.jpg" data-lightbox="scrubez">
+                                <img src="img/scrubez.jpg" class="img-thumbnail img-160 vertical-center image-pad-horizontal">
+                            </a>
+                            <a href="img/stepup.jpg" data-lightbox="stepup">
+                                <img src="img/stepup.jpg" class="img-thumbnail img-160 vertical-center">
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>ScrubEZ and StepUp <small>DTC 2: Design Lab Home (4/16 - 6/16)</small></h3>
+                            <ul>
+                                <li>
+                                    <p>
+                                        Worked with client at Design Lab Home to develop two products to address whitespace in the housewares industry, the ScrubEZ
+                                        vibrating dish scrubber and the StepUp attachment for lofted beds
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Collaborated with a team of 4 to identify whitespace, build mockups, and develop prototypes
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Led communication for our team; this included writing design rationales, filming proof of concept videos, and pitching both
+                                        solutions to two professional designers in the housewares industry
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        More information about the DTC Program can be found here:
+                                    </p>
+                                </li>
+                            </ul>
+                            <a href="http://segal.northwestern.edu/programs/undergraduate/design-thinking-communication/curriculum.html" class="btn">DTC Program</a>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </li>
+                <li class="design hidden">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-2">
+                            <a href="img/xhook.jpg" data-lightbox="xhook">
+                                <img src="img/xhook.jpg" class="img-thumbnail img-160 vertical-center">
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>XHook <small>DTC 1: Rehab Institute (9/15 - 12/15)</small></h3>
+                            <ul>
+                                <li>
+                                    <p>
+                                        Worked with client and user at the Rehabilitation Institute of Chicago to design a device to help people with hemiplegia
+                                        crochet
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Collaborated with a team of 4 to brainstorm, mockup, and prototype the Xhook, a crochet hook that functions similar to a
+                                        joystick
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Awarded 1 of 4 prizes for Best Design at project fair out of 50+ projects
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="navy jumbotron" id="skills">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h2>Technical Skills:</h2>
+                    <ul class=" list-unstyled list-inline skills-list">
+                        <li>
+                            <img src="img/python.png" class="img-160 img-thumbnail">
+                        </li>
+                        <li>
+                            <img src="img/html.png" class="img-160 img-thumbnail">
+                        </li>
+                        <li>
+                            <img src="img/css.jpg" class="img-160 img-thumbnail">
+                        </li>
+                        <li>
+                            <img src="img/js.png" class="img-160 img-thumbnail">
+                        </li>
+                        <li>
+                            <img src="img/matlab.jpeg" class="img-160 img-thumbnail">
+                        </li>
+                        <li>
+                            <img src="img/bootstrap.png" class="img-160 img-thumbnail">
+                        </li>
+                    </ul>
+                    <h2>Also, I have prior experience/classes with:</h2>
+                    <ul class="list-unstyled list-inline skills-list">
+                        <li>
+                            <img src="img/c.jpg" class="img-160 img-thumbnail">
+                        </li>
+                        <li>
+                            <img src="img/csharp.png" class="img-160 img-thumbnail">
+                        </li>
+                        <li>
+                            <img src="img/java.png" class="img-160 img-thumbnail">
+                        </li>
+                        <li>
+                            <img src="img/jquery.gif" class="img-160 img-thumbnail">
+                        </li>
+                        <li>
+                            <img src="img/flask.png" class="img-160 img-thumbnail">
+                        </li>
+                        <li>
+                            <img src="img/heroku.png" class="img-160 img-thumbnail">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </section>
+    <section class="jumbotron" id="student">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center">
+                    <ul class="list-unstyled list-inline" id="education-filter">
+                        <li class="current bg-purple"><a href="#" class="btn--heading">Education</a></li>
+                        <li><a href="#" class="btn--heading">Student Orgs</a></li>
+                    </ul>
+                </h1>
+            </div>
+            <ul class="list-unstyled" id="education-list">
+                <li class="education"><img src="img/nu.png" class="img-160 img-rounded center-block image-pad-vertical" id="nu"></li>
+                <li class="education">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <p>
+                                McCormick School of Engineering, Northwestern University <br> B.S. in Computer Science, Anticipated
+                                June 2019 <br> GPA: 3.7/4.0 <br> Dean's List: Winter Quarter 2016</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>Relevant Past Coursework:</p>
+                                    <ul class="list-square">
+                                        <li>Computer Systems (C)</li>
+                                        <li>Discrete Math</li>
+                                        <li>Artificial Intelligence (Python)</li>
+                                        <li>Data Structures (C#)</li>
+                                        <li>Object-Oriented Programming (C)</li>
+                                        <li>Design Thinking and Communication</li>
+                                        <li>Linear Algebra</li>
+                                        <li>Engineering Analysis (MATLAB)</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Current Coursework (Winter 2017):</p>
+                                    <ul class="list-square">
+                                        <li>Databases</li>
+                                        <li>Human-Computer Interaction</li>
+                                        <li>Microeconomics</li>
+                                        <li>Physics + Lab</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </li>
+                <li class="education">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <p><a href="IsaacLeeTranscript.pdf" class="btn">Unofficial Transcript</a></p>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </li>
+                <li class="student-orgs hidden">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-2">
+                            <a href="#">
+                                <img src="img/ieee.jpg" class="img-thumbnail img-160 vertical-center">
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>IEEE <small>(1/16 - Present)</small></h3>
+                            <ul class="list-square">
+                                <li>
+                                    <p>
+                                        Current Position: Project Manager
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Managing a team of 3 in the IE3 Technical Program; I lead brainstorming and hacking sessions to help students design and
+                                        build a web project in 10 weeks
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Organized BadHacks, an 8-hour hackathon with 40+ attendees that encouraged novice developers to learn new skills by creating
+                                        a silly project
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        More information about BadHacks can be found here:                                    </p>
+                                </li>
+                            </ul>
+                            <a href="http://www.mccormick.northwestern.edu/eecs/news/articles/2016/nu-ieee-hosts-successfully-innovative-badhacks-hackathon-competition.html"
+                                class="btn">BadHacks</a>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </li>
+                <li class="student-orgs hidden">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-2">
+                            <a href="#">
+                                <img src="img/cci.jpg" class="img-thumbnail img-160 vertical-center">
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Ayers College of Commerce and Industry<small>(4/16 - Present)</small></h3>
+                            <ul class="list-square">
+                                <li>
+                                    <p>
+                                        Current Position: Internal Affairs Chair
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        I manage facilities for my residential college as well as help plan social and academically-themed events for our 160+ residents
+                                        to promote interaction with our 15 faculty fellows
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        More information about Ayers CCI and Residential Colleges at Northwestern can be found here:
+                                    </p>
+                                </li>
+                            </ul>
+                            <a href="http://www.ayerscci.com/" class="btn">Ayers CCI</a>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </li>
+                <li class="student-orgs hidden">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-2">
+                            <a href="#">
+                                <img src="img/clubbaseball.jpg" class="img-thumbnail img-160 vertical-center">
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Northwestern Club Baseball <small>(9/15 - Present)</small></h3>
+                            <ul>
+                                <li>
+                                    <p>
+                                        Current Positions: Starting Pitcher, Designated Hitter, and Third Baseman
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        I pitch complete games, hit doubles, and occasionally field for our Wildcats Club Baseball Team
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="navy jumbotron cut-bottom" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h2>Email: </h2>
+                                </div>
+                                <div class="col-md-8">
+                                    <a href="mailto:isaaclee2019@u.northwestern.edu"><i class="fa fa-envelope fa-5x" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h2>GitHub: </h2>
+                                </div>
+                                <div class="col-md-8">
+                                    <a href="https://github.com/isaacrlee"><i class="fa fa-github-square fa-5x" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h2>LinkedIn: </h2>
+                                </div>
+                                <div class="col-md-8">
+                                    <a href="https://www.linkedin.com/in/isaaclee34"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="IsaacLeeResume.pdf" class="btn--white">Resume</a>
+                        </li>
+                        <li>
+                            <a href="IsaacLeeTranscript.pdf" class="btn--white">Transcript</a>
+                        </li>
+                        <li>
+                            <ul class="list-unstyled list-square">
+                                <li>
+                                    Website designed and coded on my Mac in Washington
+                                </li>
+                                <li>
+                                    Built with <a href="https://code.visualstudio.com/">VS Code</a>. Open-sourced on <a href="https://github.com/isaacrlee/Website">GitHub</a>.
+                                </li>
+                                <li>
+                                    Code uses <a href="http://mrmrs.io/btns/">btns</a>, <a href="http://clrs.cc/">colors</a>,
+                                    <a href="http://lokeshdhakar.com/projects/lightbox2/">lightbox</a>, <a href="https://css-tricks.com/snippets/jquery/smooth-scrolling/">smooth scrolling</a>,
+                                    and <a href="http://www.mattboldt.com/demos/typed-js/">typed</a>.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://use.fontawesome.com/39049f3489.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/lightbox.js"></script>
 </body>
+
 </html>
