@@ -2,7 +2,7 @@ $(document).ready(function () {
     $(function () {
         $(".name").typed({
             strings: ["Hi! I'm Isaac."],
-            typeSpeed: 25
+            typeSpeed: 100
         });
     });
     $(function () {
