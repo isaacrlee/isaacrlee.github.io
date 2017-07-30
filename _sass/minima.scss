@@ -2,7 +2,7 @@
 
 // Define defaults for each variable.
 
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-family: Athelas, Palatino, Georgia, serif !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -12,7 +12,7 @@ $spacing-unit:     30px !default;
 
 $text-color:       #111 !default;
 $background-color: #fdf9f3 !default;
-$brand-color:      #2a7ae2 !default;
+$brand-color:      #2c292d !default;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
@@ -47,3 +47,40 @@ $on-laptop:        800px !default;
   "minima/layout",
   "minima/syntax-highlighting"
 ;
+
+.name {
+  background-color: #2c292d;
+  color: #ffd866;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.yellow-bg {
+  background-color: #ffd866;
+  color: #575558;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+a:hover {
+  position: relative;
+}
+a:hover:after {
+  display: block;
+  position: absolute;
+  left: 10em;
+  top: -10em;
+}
+
+#pocket-ian:hover:after {
+  content: url(images/pgs-chatbot.png);
+}
