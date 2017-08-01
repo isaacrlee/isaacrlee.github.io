@@ -75,12 +75,22 @@ a:hover {
   position: relative;
 }
 a:hover:after {
+  position: fixed;
+  top: 50vh;
+  right: 5vw;
   display: block;
-  position: absolute;
-  left: 10em;
-  top: -10em;
+  max-width: 60vw;
+  transform: translateY(-50%);
 }
 
 #pocket-ian:hover:after {
+  content: url(images/pocket-ian.png);
+}
+
+#chef-curry:hover:after {
+  content: url(images/chef-curry.png);
+}
+
+#pgs-chatbot:hover:after {
   content: url(images/pgs-chatbot.png);
 }
