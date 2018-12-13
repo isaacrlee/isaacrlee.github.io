@@ -1,3 +1,6 @@
 [submodule "isaac/themes/hallo"]
 	path = isaac/themes/hallo
 	url = https://github.com/EmielH/hallo-hugo.git
+[submodule "themes/hallo"]
+	path = themes/hallo
+	url = https://github.com/EmielH/hallo-hugo.git
