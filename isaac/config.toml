@@ -1,0 +1,25 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Isaac Lee"
+theme = "hallo"
+[Author]
+    name = "Isaac"
+[params]
+    [[params.links]]
+        iconset = "fas"
+        icon = "envelope"
+        title = "E-mail"
+        url = "mailto:isaaclee2019@u.northwestern.edu"
+    [[params.links]]
+        iconset = "fas"
+        icon = "file-alt"
+        title = "Resume"
+        url = "https://resume.creddle.io/resume/65z895lwgyt"
+    [[params.links]]
+        icon = "github"
+        title = "Github"
+        url = "https://github.com/isaacrlee"
+    [[params.links]]
+        icon = "linkedin"
+        title = "Linkedin"
+        url = "https://www.linkedin.com/in/isaaclee34/"
